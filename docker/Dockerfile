@@ -14,7 +14,7 @@ ENV LANG ja_JP.UTF-8
 WORKDIR /root
 
 RUN \
-  https://github.com/takehiko/kzd.git && \
+  git clone https://github.com/takehiko/kzd.git && \
   sed -e "s/..\\/lib/kzd\\/lib/" kzd/sample/hideyoshi.rb > hideyoshi.rb && \
   chmod +x hideyoshi.rb
 
