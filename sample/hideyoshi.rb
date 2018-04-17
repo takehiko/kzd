@@ -251,6 +251,7 @@ tmp_dir_a = %w(text img r hideyoshi_result).map {|dir|
   test(?d, dir) ? nil : dir
 }.compact
 
+init_zip
 init_hideyoshi_files
 
 man = Kzd::Manager.new
