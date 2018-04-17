@@ -205,8 +205,7 @@ EOS
   if $use_zip
     Zip::File.open(zipfile, Zip::File::CREATE) do |z|
       Dir.glob(File.join(dir, "*")) do |file|
-        z.add(file)
-        # z.add(file, file)
+        z.add(file, file)
       end
     end
   else
